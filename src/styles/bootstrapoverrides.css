@@ -1,0 +1,31 @@
+.form-control,
+.custom-select,
+.input-group-text,
+.btn-primary {
+  border-radius: 0;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+}
+
+.text-muted {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  word-break: break-all;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0 1rem 0 1rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.text-muted span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=bootstrapoverrides.css.map */

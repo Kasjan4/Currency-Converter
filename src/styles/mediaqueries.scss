@@ -1,0 +1,96 @@
+/* RESPONSIVE BREAKPOINTS */
+
+/* MOBILE */
+
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+
+  #root {
+
+    main {
+
+      .cc-container {
+        width: 90vw;
+
+        form {
+
+          .form-label {
+            font-size: 1.5rem;
+          }
+
+          #btn-swap {
+
+            svg {
+              font-size: 2rem;
+            }
+          }
+
+          .text-muted {
+            font-size: 1.2rem;
+
+            span {
+              font-size: 1.5rem;
+            }
+          }
+
+          .btn-primary {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+/* MOBILE LANDSCAPE */
+
+@media only screen and (orientation: landscape) and (max-height: 767px) and (max-width: 823px) {
+
+  #root {
+    height: max-content;
+    justify-content: initial;
+
+    main {
+
+      .cc-container {
+        width: 60vw;
+        margin: 10vh 0 10vh 0;
+
+        form {
+
+          .form-label {
+            font-size: 1.5rem;
+          }
+
+          #btn-swap {
+
+            svg {
+              font-size: 2rem;
+            }
+          }
+
+          .text-muted {
+            font-size: 1rem;
+
+            span {
+              font-size: 1.2rem;
+            }
+          }
+
+          .btn-primary {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* TABLET PORTRAIT */
+
+@media only screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 768px) {}
+
+/* TABLET LANDSCAPE */
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1279px) {}

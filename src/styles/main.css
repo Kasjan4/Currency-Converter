@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;700&family=Raleway:wght@400;700;900&display=swap");
+.form-control,
+.custom-select,
+.input-group-text,
+.btn-primary {
+  border-radius: 0;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+}
+
+.form-label {
+  font-size: 1.2rem;
+}
+
+.text-muted {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  word-break: break-all;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0 1rem 0 1rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.text-muted span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #1652f0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1652f0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#root main .cc-container {
+  box-shadow: #11332a 0px 4px 12px 0px;
+  padding: 1rem;
+  background-color: white;
+  width: 400px;
+}
+
+#root main .cc-container form #btn-swap {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  transition: .5s ease;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+#root main .cc-container form #btn-swap svg {
+  color: #007bff;
+  opacity: .65;
+  transition: .5s ease;
+}
+
+#root main .cc-container form #btn-swap:hover svg {
+  opacity: 1;
+}
+
+#custom-spinner {
+  position: fixed;
+  top: calc(50vh - 25px);
+  left: calc(50vw - 25px);
+  color: #f3f3f3;
+  width: 50px;
+  height: 50px;
+  box-shadow: #11332a 0px 4px 12px 0px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+/* MOBILE */
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+  #root main .cc-container {
+    width: 90vw;
+  }
+  #root main .cc-container form .form-label {
+    font-size: 1.5rem;
+  }
+  #root main .cc-container form #btn-swap svg {
+    font-size: 2rem;
+  }
+  #root main .cc-container form .text-muted {
+    font-size: 1.2rem;
+  }
+  #root main .cc-container form .text-muted span {
+    font-size: 1.5rem;
+  }
+  #root main .cc-container form .btn-primary {
+    font-size: 1.5rem;
+  }
+}
+
+/* MOBILE LANDSCAPE */
+@media only screen and (orientation: landscape) and (max-height: 767px) and (max-width: 823px) {
+  #root {
+    height: max-content;
+    justify-content: initial;
+  }
+  #root main .cc-container {
+    width: 60vw;
+    margin: 10vh 0 10vh 0;
+  }
+  #root main .cc-container form .form-label {
+    font-size: 1.5rem;
+  }
+  #root main .cc-container form #btn-swap svg {
+    font-size: 2rem;
+  }
+  #root main .cc-container form .text-muted {
+    font-size: 1rem;
+  }
+  #root main .cc-container form .text-muted span {
+    font-size: 1.2rem;
+  }
+  #root main .cc-container form .btn-primary {
+    font-size: 1.5rem;
+  }
+}
+
+/* TABLET PORTRAIT */
+/* TABLET LANDSCAPE */
+/*# sourceMappingURL=main.css.map */

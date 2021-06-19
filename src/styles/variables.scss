@@ -1,0 +1,24 @@
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin ease {
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+@mixin pulse {
+  -webkit-animation: pulse 1.5s linear infinite;
+  -moz-animation: pulse 1.5s linear infinite;
+  -ms-animation: pulse 1.5s linear infinite;
+  -o-animation: pulse 1.5s linear infinite;
+  animation: pulse 1.5s linear infinite;
+}
