@@ -2,7 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 console.log(process.env)
 
@@ -13,18 +13,18 @@ const env = process.env.NODE_ENV === 'production' ? (
 )
 
 module.exports = () => {
-  const publicPath = env.NODE_ENV === 'local' ? {
-    publicPath: '/'
-  } : {}
+
+  const ASSET_PATH = env.NODE_ENV === 'local' ? '/' : ''
 
   const mode = process.env.NODE_ENV || 'development'
   console.log(mode)
+
   return {
     entry: './src/index.js',
     output: {
       filename: 'bundle.js',
       path: path.resolve('.'),
-      ...publicPath
+      publicPath: ASSET_PATH
     },
     devtool: mode === 'production' ? false : 'inline-source-map',
     mode: mode,
@@ -53,6 +53,7 @@ module.exports = () => {
       }
     },
     plugins: [
+      new BundleAnalyzerPlugin(),
       new Dotenv(),
       new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
