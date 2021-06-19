@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <HashRouter>
-      <Switch location={location}>
+      <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
     </HashRouter>
